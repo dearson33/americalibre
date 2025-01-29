@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrusel de Imágenes</title>
+    <style>
+      body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('abstract-dark-wall.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5; /* Ajusta la opacidad aquí */
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+      .banner {
+        text-align: center;
+        padding: 20px;
+      }
+      .imagecarousel {
+        position: relative;
+        height: 233px;
+        margin-bottom: 30px;
+        display: flex;
+        width: fit-content;
+        gap: 20px;
+      }
+
+      .image-banner {
+        -moz-box-shadow: 0 0 50px #d31c1c;
+        -webkit-box-shadow: 0 0 50px #c92626;
+        box-shadow: 0px 0px 50px #be2929;
+        height: 500px;
+        margin-bottom: 30px;
+
+        width: fit-content;
+        gap: 20px;
+      }
+
+      .imagecarousel img {
+        margin: 0px 0px;
+        box-shadow: 2px 2px 8px #000000;
+      }
+
+      .imagecarousel {
+        animation: bannermove 50s linear infinite;
+      }
+
+      @keyframes bannermove {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <div class="content">
+
+    <div class="banner">
+      <h1></h1>
+      <audio autoplay >
+        <source src="/music.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <img class="image-banner" src="/2025.jpeg" alt="" />
+    </div>
+    <div class="imagecarousel">
+      <img src="/imagen1.jpeg" alt="" />
+
+      <img src="/imagen2.jpeg" alt="" />
+
+      <img src="/imagen3.jpeg" alt="" />
+
+      <img src="/imagen4.jpeg" alt="" />
+      <img src="/imagen5.jpeg" alt="" />
+
+      <img src="/imagen1.jpeg" alt="" />
+
+      <img src="/imagen2.jpeg" alt="" />
+
+      <img src="/imagen3.jpeg" alt="" />
+      <img src="/imagen4.jpeg" alt="" />
+
+      <img src="/imagen5.jpeg" alt="" />
+      <img src="/imagen1.jpeg" alt="" />
+
+      <img src="/imagen2.jpeg" alt="" />
+
+      <img src="/imagen3.jpeg" alt="" />
+
+      <img src="/imagen4.jpeg" alt="" />
+      <img src="/imagen5.jpeg" alt="" />
+
+      <img src="/imagen1.jpeg" alt="" />
+
+      <img src="/imagen2.jpeg" alt="" />
+
+      <img src="/imagen3.jpeg" alt="" />
+      <img src="/imagen4.jpeg" alt="" />
+
+      <img src="/imagen5.jpeg" alt="" />
+    </div></div>
+  </body>
+</html>
